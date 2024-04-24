@@ -1,0 +1,129 @@
+.screen-reader-text {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+.search-form {
+	width: 35%;
+	float: left;
+	padding-right: 20px;
+}
+.search-term {
+	width: 100%;
+	margin: 0 0 5px 0;
+}
+.search-terms {
+	display: table;
+	margin: 0 0 10px 0;
+}
+.search-filters {
+	overflow: hidden;
+	margin: 0px 0 10px 0;
+	padding: 0px;
+}
+.search-filters-title {
+	font-weight: normal;
+	font-size: 16px !important;
+	margin: 0 0 0px 0;
+	padding: 14px;
+	color: #fff !important;
+	text-decoration: none !important;
+	border: 0px solid #000000;
+	background: #999ea6;
+}
+.search-filters-title a {
+	color: #ec682a !important;
+	text-decoration: none !important;
+}
+.filter-group {
+	padding: 10px;
+	border: 1px solid #dde2ea;
+}
+.cloned-filters {
+	display: none;
+}
+.search-results {
+	width: 65%;
+	float: right;
+	padding-bottom: 2500px; /* just scrolling space */
+}
+.result {
+	float: left;
+	width: 24%;
+	height: 100px;
+	margin-right: 1.33%;
+	margin-bottom: 1.33%;
+	background: #eee;
+}
+.result:nth-child(4n) {
+	margin-right: 0;
+}
+.result img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+@media (max-width: 1000px) {
+body {
+/*width: 90%;*/
+}
+}
+
+@media (max-width: 600px) {
+body, .search-form, .search-results {
+	width: 100%;
+}
+.search-form {
+	padding: 0;
+}
+.search-terms {
+	display: table;
+	width: 100%;
+	margin: 0;
+}
+.search-terms > div {
+	display: table-row;
+}
+.search-terms > div > span {
+	display: table-cell;
+}
+.search-term-wrap {
+	padding-right: 10px;
+}
+.search-button {
+	width: 100%;
+}
+.search-filters-title {
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+	margin: 0;
+	padding-left: 15px;
+	background: #999ea6 url(../img/searchicon2.png) no-repeat left center;
+}
+.search-filters.pinned {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.2);
+}
+.filter-group {
+	display: none;
+}
+.filter-explanation {
+	display: none;
+}
+.filters-open .filter-group, .filters-open .filter-explanation {
+	display: block;
+}
+.filters-open .search-filters-title {
+	margin: 0px;
+}
+.search-filters {
+	overflow: hidden;
+	margin: 0px 0 20px 0;
+	padding: 0px;
+}
+}
